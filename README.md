@@ -1,5 +1,7 @@
 # **Pêndulo Simples**
 
+Projeto final de Fisica I escrito em JavaScript com objetivo de construir uma simulação do pêndulo simples com interação em tempo real.
+
 ## **1. Objetivo**
 Descrever o funcionamento do pêndulo simples através de uma abordagem que combina simulações e análises para facilitar a compreensão das suas propriedades físicas.
 
@@ -85,9 +87,6 @@ Um pêndulo simples consiste em:
    - Determinação da aceleração gravitacional local (\(g\)).
 
 ---
-
-
-# Fisica1_bcc
 
 Projeto final de Fisica I escrito em JavaScript para construir uma simulação de pendulo com interaçao em tempo real.
 
