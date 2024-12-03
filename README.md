@@ -1,6 +1,5 @@
 # **A Dinâmica do Pêndulo**
 
-Projeto final de Fisica I escrito em JavaScript
 
 ##  Descrição básica do projeto
 
