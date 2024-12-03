@@ -118,7 +118,8 @@ Para compilar:
 
      Esbuild
         - Instale o esbuild no diretorio do projeto usando ```npm install --save-exact --save-dev esbuild```
-        - Vamos criar um link simbolico. Abra o cmd como administrador e execute ```mklink esbuild node_modules\esbuild\bin\esbuild```
+        - Vamos criar um link simbolico. Abra o cmd como administrador e execute
+        - ```mklink esbuild node_modules\esbuild\bin\esbuild```
         - Verifique se foi criado corretamente com o comando ```./esbuild --version```
     
      [Perl](https://strawberryperl.com/)
