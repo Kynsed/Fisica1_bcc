@@ -1,0 +1,111 @@
+
+#define #TIME_GRAPH ##LOCALE#_TIME_GRAPH
+#define en_TIME_GRAPH Time Graph
+
+#define #MULTI_GRAPH ##LOCALE#_MULTI_GRAPH
+#define en_MULTI_GRAPH Multi Graph
+
+#define #SIM_TAB_SELECTED selected
+#define #GRAPH_TAB_SELECTED
+
+#define #TAB_ITEMS \
+  <li class="sim #SIM_TAB_SELECTED">Sim</li>\
+  <li class="graph #GRAPH_TAB_SELECTED">Graph</li>\
+  <li class="time_graph">#TIME_GRAPH</li>\
+  <li class="multi_graph">#MULTI_GRAPH</li>
+
+#define #HEADER_BAR <div id="header_nav">\
+#LANGUAGE_MENU\
+</div>\
+<ul id="header_bar" class="horiz_tabs">\
+  #TAB_ITEMS\
+</ul>
+
+#define #TAB_LIST_ID header_bar
+
+#define #APP_NUM
+
+#define #CONTROLS_CONTAINER \
+<div id="container#APP_NUM" class="control_container">\
+  <div id="div_graph#APP_NUM" >\
+  </div>\
+  <div id="div_time_graph#APP_NUM" >\
+  </div>\
+  <div id="sim_applet#APP_NUM" >\
+  </div>\
+  <div id="sim_controls#APP_NUM" class="control_group">\
+  </div>\
+  <div id="graph_controls#APP_NUM" class="control_group">\
+  </div>\
+  <div id="time_graph_controls#APP_NUM" class="control_group">\
+  </div>\
+  <p>\
+    <label id="label_show_sim#APP_NUM">\
+      <input type="checkbox" id="show_sim#APP_NUM" checked>show simulation\
+    </label>\
+    <label id="label_terminal#APP_NUM">\
+      <input type="checkbox" id="show_terminal#APP_NUM">terminal\
+    </label>\
+  </p>\
+  <div id="div_terminal#APP_NUM">\
+    <label style="display:inline-block">command &gt;\
+      <input type="text" id="term_input#APP_NUM" size="80">\
+    </label>\
+    <textarea id="term_output#APP_NUM" cols=80 rows=20 wrap="soft"></textarea> <br>\
+  </div>\
+</div>
+
+#define #CONTROLS_CONTAINER2 \
+<div id="container#APP_NUM" class="view_container">\
+  <div id="sim_applet#APP_NUM" class="view_group">\
+    <div id="sim_controls#APP_NUM" class="control_group">\
+    </div>\
+  </div>\
+  <div id="div_graph#APP_NUM" class="view_group">\
+    <div id="graph_controls#APP_NUM" class="control_group">\
+    </div>\
+  </div>\
+  <div id="div_time_graph#APP_NUM" class="view_group">\
+    <div id="time_graph_controls#APP_NUM" class="control_group">\
+    </div>\
+  </div>\
+</div>\
+<div>\
+  <p>\
+    <label id="label_show_sim#APP_NUM">\
+      <input type="checkbox" id="show_sim#APP_NUM" checked>show simulation\
+    </label>\
+    <label id="label_terminal#APP_NUM">\
+      <input type="checkbox" id="show_terminal#APP_NUM">terminal\
+    </label>\
+  </p>\
+  <div id="div_terminal#APP_NUM">\
+    <label style="display:inline-block">command &gt;\
+      <input type="text" id="term_input#APP_NUM" size="80">\
+    </label>\
+    <textarea id="term_output#APP_NUM" cols=80 rows=20 wrap="soft"></textarea> <br>\
+  </div>\
+</div>
+
+#comment #ELEM_IDS communicates to the layout the various ID's of the UI elements.
+
+#define #ELEM_IDS var elem_ids#APP_NUM = {\
+      tab_list: '#TAB_LIST_ID',\
+      container: 'container#APP_NUM',\
+      term_output: 'term_output#APP_NUM',\
+      term_input: 'term_input#APP_NUM',\
+      sim_applet: 'sim_applet#APP_NUM',\
+      div_graph: 'div_graph#APP_NUM',\
+      graph_controls: 'graph_controls#APP_NUM',\
+      sim_controls: 'sim_controls#APP_NUM',\
+      div_terminal: 'div_terminal#APP_NUM',\
+      div_time_graph: 'div_time_graph#APP_NUM',\
+      time_graph_controls: 'time_graph_controls#APP_NUM',\
+      div_multi_graph: 'div_multi_graph#APP_NUM',\
+      multi_graph_controls: 'multi_graph_controls#APP_NUM',\
+      label_terminal: 'label_terminal#APP_NUM',\
+      show_terminal: 'show_terminal#APP_NUM',\
+      show_sim: 'show_sim#APP_NUM',\
+      images_dir: '#IMAGES_DIR'\
+    };
+

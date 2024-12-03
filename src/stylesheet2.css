@@ -1,0 +1,30 @@
+/* Copyright 2021 Erik Neumann. All Rights Reserved.
+* Use of this source code is governed by the Apache License, Version 2.0.
+* See the LICENSE file and http://www.apache.org/licenses/LICENSE-2.0.
+*/
+
+div.view_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+div.view_group {
+  flex-grow: 1;
+}
+
+canvas {
+  width: auto; /* default value, to undo width: 100% */
+}
+
+div.control_group {
+  display: inline-block;
+}
+
+div.control_group label, div.control_group div.slider {
+  display: block;
+  /* "width: max-content" ensures that labels report their true width, not the
+   * width of their container.
+   */
+  width: max-content;
+}

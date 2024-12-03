@@ -1,0 +1,30 @@
+#define #TOP_DIR .
+#define #APP_PATH index
+#include "macros.html"
+#DOC_TYPE
+<html lang="en">
+<head>
+#META_TAGS
+</head>
+<body>
+<ul id="header_bar">
+</ul>
+
+PHYSICS PROJECT
+
+<p style="line-height: 2em">
+<a href="sims/pendulum/PendulumApp-#LOCALE.html">
+    Pendulo</a> <br>
+</p>
+
+<script>
+  window.addEventListener('pageshow', function(event){
+    // set language menu to correct language
+    var menu = document.getElementById('language_menu');
+    if (menu) {
+      menu.selectedIndex = #LANG_MENU_IDX;
+    }
+  }, /*capturing=*/false);
+</script>
+</body>
+</html>

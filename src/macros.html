@@ -1,0 +1,98 @@
+#define #IMAGES_DIR #TOP_DIR/images
+
+#define #DOC_TYPE <!DOCTYPE html>
+
+#define #STYLE_SHEET stylesheet.css
+
+
+#define #META_TAGS \
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width, initial-scale=1">\
+<link rel="stylesheet" type="text/css" href="#TOP_DIR/#STYLE_SHEET">\
+
+#define #MATH_JAX \
+<script type="text/javascript" async\
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">\
+</script>
+
+#define #HIDE_ALL \
+<script>\
+  document.getElementsByTagName("html")[0].style.visibility = "hidden";\
+</script>
+
+#define #SHOW_ALL \
+<script>\
+  document.getElementsByTagName("html")[0].style.visibility = "visible";\
+</script>
+
+#define #LANGUAGE ##LOCALE#_LANGUAGE
+#define #en_LANGUAGE English
+
+#define #I18N_LOCALE ##LOCALE#_LOCALE
+#define #en_LOCALE English
+
+#define #I18N_ENGLISH ##LOCALE#_ENGLISH
+#define #en_ENGLISH English
+
+#define #I18N_ENGLISH_SELECTED ##LOCALE#_ENGLISH_SELECTED
+#define #en_ENGLISH_SELECTED selected
+
+#define #I18N_GERMAN_SELECTED ##LOCALE#_GERMAN_SELECTED
+#define #en_GERMAN_SELECTED
+
+#define #I18N_NEXT ##LOCALE#_NEXT
+#define #en_NEXT next
+
+#define #I18N_PREVIOUS ##LOCALE#_PREVIOUS
+#define #en_PREVIOUS previous
+
+#define #LANGUAGE_MENU \
+  <select id="language_menu"\
+    onchange="location = this.options[this.selectedIndex].value;">\
+    <option value="#FILE_NAME#-en.html" #I18N_ENGLISH_SELECTED>#I18N_ENGLISH</option>\
+  </select>
+
+#define #HEADER_BAR <div id="header_nav">\
+#LANGUAGE_MENU\
+</div>\
+<ul id="header_bar">\
+</ul>
+
+#defineFrom #APP_CLASS {#APP_PATH} s~\.~\\\$~g
+
+#defineFrom #APP_NAME {#APP_PATH} s~.*\.~~g
+
+#define #APP_NUM
+
+#define #LOAD_APP <script src="#APP_NAME#-#LOCALE.js"></script>
+
+#define #LANG_MENU_IDX ##LOCALE#_LANG_MENU_IDX
+#define #en_LANG_MENU_IDX 0
+
+#define #INSTANTIATE_APP app#APP_NUM = new #APP_CLASS(elem_ids#APP_NUM);
+
+#define #BUILD_APP \
+<script>\
+  (function build() {\
+    #ELEM_IDS\
+    #INSTANTIATE_APP\
+    app#APP_NUM.defineNames('app#APP_NUM');\
+    window.addEventListener('pageshow', function(event){\
+      // set language menu in case of back-button \
+      var menu = document.getElementById('language_menu');\
+      if (menu) { menu.selectedIndex = #LANG_MENU_IDX; }\
+    }, /*capturing=*/false);\
+    window.addEventListener('blur', function(event){\
+      app#APP_NUM.eval('FIRING=false;', /*output=*/false);\
+    }, /*capturing=*/false);\
+    window.addEventListener('focus', function(event){\
+      app#APP_NUM.eval('FIRING=true;', /*output=*/false);\
+    }, /*capturing=*/false);\
+  }());\
+</script>
+
+#define #START_APP \
+<script>var app#APP_NUM; if (app#APP_NUM) app#APP_NUM.setup();</script>\
+<script>var app#APP_NUM; if (app#APP_NUM) app#APP_NUM.start();</script>
+
+</p>
