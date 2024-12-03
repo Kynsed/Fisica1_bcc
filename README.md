@@ -11,7 +11,8 @@ Este projeto é uma simulação criada para ilustrar o comportamento de um pênd
 ## **2. Conceitos**
 
 ### **Definição de um Pêndulo Simples**
-O pêndulo simples é um exemplo clássico de movimento harmônico simples (para pequenos ângulos) quando desprezamos forças resistivas como atrito. O movimento do pêndulo é regido pela força gravitacional que age na direção radial, causando uma aceleração centrípeta.
+Um pêndulo simples é um sistema ideal que consiste de uma partícula suspensa por um fio inextensível e leve. Quando afastado de sua posição de equilibrio e solto, o pêndulo oscilará em um plano vertical sob à ação da gravidade.
+O pêndulo simples é um exemplo clássico de movimento harmônico simples (para pequenos ângulos) quando desprezamos forças resistivas como atrito. 
 
 **Suposições Adotadas:**
 - O fio é **sem massa** e **inextensível**.  
