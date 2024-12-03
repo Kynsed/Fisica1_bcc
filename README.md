@@ -64,7 +64,7 @@ O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme,
 - A **massa da bobina não altera o período** ou a frequência do pêndulo (negligenciando a resistência do ar).  
 - Isso ocorre porque a força restauradora (gravidade) e a inércia aumentam proporcionalmente com a massa, anulando sua influência.
 
----
+
 ---
 
 ## **5. Aplicações Práticas**
@@ -134,7 +134,8 @@ Para compilar:
   5. Execute o comando ```make``` para gerar o .html
 
   6. Abra o diretório do projeto -> build, abra o arquivo index-en.html para inciar a simulação
-     
+
+---     
      
 
 Este projeto foi desenvolvido por:
@@ -145,7 +146,7 @@ Este projeto foi desenvolvido por:
 
 Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
 
-
+---
 
 ## Materiais de Referência:
 
