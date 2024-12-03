@@ -18,6 +18,7 @@ A partir das equações horárias do movimento harmônico simples e das leis de 
 ![p](https://github.com/user-attachments/assets/64e54e0f-a57e-4ed2-b7f6-108e3bf362b9)
 
 Px - componente horizontal da força peso (N)
+
 Py - componente vertical da força peso (N)
 
 A fórmula mostrada a seguir é usada para calcular o período no pêndulo simples, ela relaciona o tempo de uma oscilação completa ao tamanho do fio e à aceleração da gravidade local.
