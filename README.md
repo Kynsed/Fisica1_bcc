@@ -136,6 +136,23 @@ Para compilar:
   6. Abra o diretório do projeto -> build, abra o arquivo index-en.html para inciar a simulação
      
      
+
+Este projeto foi desenvolvido por:
+
+- **Kevin Silva** : [Email 1]
+- **Gabriel Demba** : [Email 2]
+- **Wiltord Mosingi**: [wiltordmosingi@usp.br]
+
+Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
+
+
+
+## Materiais de Referência:
+
+- [Link para material 1](URL_1)
+- [Link para material 2](URL_2)
+- [Link para material 3](URL_3)
+- [Link para material 4](URL_4)
          
 
      
