@@ -112,29 +112,29 @@ Para compilar:
 
      Typescript
        - Instale globalmente com o comando  ```npm install -g typescript```
-       - Instale o Typescript no diretorio do projeto ```npm install typescript --save-dev```
-       - Certifique-se que o Typescript foi instalado corretamente atraves do comando ```tsc --version```.
+       - Instale o Typescript localmente ```npm install typescript --save-dev```
+       - Certifique-se que o Typescript foi instalado corretamente através do comando ```tsc --version```.
        - Criando um alias: ```alias tsc="*diretorio_do_projeto*\node_modules\typescipt\bin\tsc"```     
 
      Esbuild
-        - Instale o esbuild no diretorio do projeto usando ```npm install --save-exact --save-dev esbuild```
-        - Vamos criar um link simbolico. Abra o cmd como administrador e execute
+        - Instale o esbuild localmente ```npm install --save-exact --save-dev esbuild```
+        - Vamos criar um link simbólico. Abra o cmd como administrador e execute
                   ```mklink esbuild node_modules\esbuild\bin\esbuild```
         - Verifique se foi criado corretamente com o comando ```./esbuild --version```
     
      [Perl](https://strawberryperl.com/)
-       - Baixe o arquivo msi e faca a instalacao padrao
-       - Verfique a instalacao com o comando ```perl --version```
+       - Baixe o arquivo .msi e faça a instalação padrão
+       - Verfique a instalação com o comando ```perl --version```
     
      [GNU Make](https://www.gnu.org/software/make/)
        - Baixe e instale GNU Make
-       - Verifique a instalacao com o comando ```make --version```
+       - Verifique a instalação com o comando ```make --version```
 
-  4. Execute o comando tsc para compilar os arquivo .ts em .js
+  4. Execute o comando ```tsc``` para compilar os arquivo .ts em .js
 
-  5. Execute o comando make para compilar o html
+  5. Execute o comando ```make``` para gerar o .html
 
-  6. Na pasta build, abra o arquivo index-en.html
+  6. Abra o diretório do projeto -> build, abra o arquivo index-en.html para inciar a simulação
      
      
          
