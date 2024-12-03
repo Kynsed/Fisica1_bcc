@@ -4,15 +4,16 @@
 ##  Descrição básica do projeto
 
 Este projeto é uma simulação criada para ilustrar o comportamento de um pêndulo simples na Física. O objetivo é fornecer uma visualização gráfica do movimento oscilatório, permitindo o estudo e a compreensão dos conceitos envolvidos. A simulação mostra a trajetória de um pêndulo oscilando em diferentes condições, como variações no comprimento da corda e na gravidade.
-![p](https://github.com/user-attachments/assets/4d0aec33-c7d6-4356-a312-97a787f06f28)
 
 ---
 
-## ** Conceitos**
+## Conceitos de Física e Modelo Matemático
 
-### **Definição de um Pêndulo Simples**
+### Pêndulo Simples
 Um pêndulo simples é um sistema ideal que consiste de uma partícula suspensa por um fio inextensível e leve. Quando afastado de sua posição de equilibrio e solto, o pêndulo oscilará em um plano vertical sob à ação da gravidade.
 O pêndulo simples é um exemplo clássico de movimento harmônico simples (para pequenos ângulos) quando desprezamos forças resistivas como atrito. 
+
+![p](https://github.com/user-attachments/assets/4d0aec33-c7d6-4356-a312-97a787f06f28)
 
 **Suposições Adotadas:**
 - O fio é **sem massa** e **inextensível**.  
