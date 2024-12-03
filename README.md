@@ -10,8 +10,7 @@ Este projeto é uma simulação criada para ilustrar o comportamento de um pênd
 ## Conceitos de Física e Modelo Matemático
 
 ### Pêndulo Simples
-Um pêndulo simples é um sistema ideal que consiste de uma partícula suspensa por um fio inextensível e leve. Quando afastado de sua posição de equilibrio e solto, o pêndulo oscilará em um plano vertical sob à ação da gravidade.
-O pêndulo simples é um exemplo clássico de movimento harmônico simples (para pequenos ângulos) quando desprezamos forças resistivas como atrito. 
+O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme, ou seja, um corpo com dimensões insignificantes, presa a um fio de massa desprezível e inextensível capaz de oscilar em torno de uma posição fixa. Graças à sua simplicidade, esse pêndulo é bastante usado durante o estudo do movimento harmônico simples. 
 
 ![p](https://github.com/user-attachments/assets/4d0aec33-c7d6-4356-a312-97a787f06f28)
 
