@@ -8,12 +8,10 @@ Este projeto é uma simulação criada para ilustrar o comportamento de um pênd
 
 ---
 
-## **2. Conceitos Chave**
+## **2. Conceitos**
 
 ### **Definição de um Pêndulo Simples**
-Um pêndulo simples consiste em:
-- Uma **massa (bob)** conectada a um fio.
-- Um **ponto de suspensão**, permitindo que a massa oscile livremente.
+O pêndulo simples é um exemplo clássico de movimento harmônico simples (para pequenos ângulos) quando desprezamos forças resistivas como atrito. O movimento do pêndulo é regido pela força gravitacional que age na direção radial, causando uma aceleração centrípeta.
 
 **Suposições Adotadas:**
 - O fio é **sem massa** e **inextensível**.  
