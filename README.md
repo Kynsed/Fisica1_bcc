@@ -1,85 +1,85 @@
 # **Pêndulo Simples**
 
 ## **1. Objetivo**
-Explicar o funcionamento do pêndulo simples utilizando uma abordagem que analisa os resultados simulados para promover uma compreensão intuitiva de suas propriedades físicas.
+Descrever o funcionamento do pêndulo simples através de uma abordagem que combina simulações e análises para facilitar a compreensão das suas propriedades físicas.
 
 ---
 
 ## **2. Conceitos Chave**
 
 ### **Definição de um Pêndulo Simples**
-O pêndulo simples consiste em:
-- Uma **massa (bob)** presa a um fio ou haste.
+Um pêndulo simples consiste em:
+- Uma **massa (bob)** conectada a um fio ou haste.
 - Um **ponto de suspensão**, permitindo que a massa oscile livremente.
 
-**Suposições:**
+**Suposições Adotadas:**
 - O fio é **sem massa** e **inextensível**.  
 - O sistema está sob uma **força gravitacional uniforme**.  
-- Não há resistência do ar.
+- Desconsidera-se a resistência do ar.
 
 ---
 
 ### **Equação do Movimento**
 
-1. A equação geral que descreve o movimento do pêndulo:  
+1. A equação geral que rege o movimento do pêndulo:  
    $$ \frac{d^2\theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0 $$
 
 2. Para **pequenos ângulos** (\(\sin(\theta) \approx \theta\)):  
    $$ \frac{d^2\theta}{dt^2} + \frac{g}{L} \theta = 0 $$
 
-   Esta é a equação do **movimento harmônico simples**, onde o pêndulo oscila simetricamente ao redor da posição de equilíbrio.
+   Esta forma reduzida caracteriza o **movimento harmônico simples**, no qual o pêndulo oscila simetricamente em torno da posição de equilíbrio.
 
 ---
 
 ## **3. Relações e Efeitos**
 
 ### **Comprimento do Fio (\(L\))**
-- O comprimento do fio é **inversamente proporcional** à frequência da oscilação.
-- **Efeito:**  
-  - Aumentar \(L\) aumenta o tempo do ciclo (*período aumenta*).  
-  - Diminuir \(L\) reduz o tempo do ciclo (*período diminui*).  
-- **Equação para o Período (\(T\)):**  
+- O comprimento do fio é **inversamente proporcional** à frequência de oscilação.
+- **Efeitos:**  
+  - Aumentar \(L\) **aumenta o período** (ciclo mais lento).  
+  - Diminuir \(L\) **reduz o período** (ciclo mais rápido).  
+- **Equação do Período (\(T\)):**  
   $$ T = 2\pi \sqrt{\frac{L}{g}} $$  
-  Onde:
-  - \(T\): Período (tempo para um ciclo completo)  
-  - \(L\): Comprimento do fio  
-  - \(g\): Aceleração gravitacional  
+  Onde:  
+  - \(T\): Período (tempo para um ciclo completo).  
+  - \(L\): Comprimento do fio.  
+  - \(g\): Aceleração gravitacional.
 
 ---
 
 ### **Aceleração Gravitacional (\(g\))**
-- A aceleração gravitacional **afeta diretamente a velocidade da oscilação**.  
-- **Efeito:**  
-  - Aumentar \(g\) faz o pêndulo oscilar mais rápido.  
-  - Diminuir \(g\) faz o pêndulo oscilar mais devagar.
+- A aceleração gravitacional **influencia diretamente a velocidade de oscilação**.  
+- **Efeitos:**  
+  - Aumentar \(g\) **acelera o pêndulo** (ciclos mais rápidos).  
+  - Reduzir \(g\) **desacelera o pêndulo** (ciclos mais lentos).
 
 ---
 
 ### **Amplitude (\(\theta_0\))**
 - O **ângulo inicial** (\(\theta_0\)) determina a altura inicial do pêndulo.  
-- **Efeito:**  
-  - Para **pequenos ângulos** (\(< 15^\circ\)), o movimento é harmônico, e o período é constante.  
-  - Para **grandes ângulos**, a aproximação \(\sin(\theta) \approx \theta\) não é válida, e o movimento torna-se **não linear**, aumentando ligeiramente o período.
+- **Efeitos:**  
+  - Para **ângulos pequenos** (\(< 15^\circ\)), o movimento é harmônico e o período é constante.  
+  - Para **ângulos grandes**, a aproximação \(\sin(\theta) \approx \theta\) não é válida, resultando em **movimento não linear** e ligeiro aumento no período.
 
 ---
 
 ### **Massa da Bobina (\(m\))**
-- A **massa da bobina não afeta o período** ou a frequência do pêndulo (se a resistência do ar for negligenciada).  
-- Isso ocorre porque a força restauradora (gravidade) e a inércia são proporcionais à massa, anulando sua influência.
+- A **massa da bobina não altera o período** ou a frequência do pêndulo (negligenciando a resistência do ar).  
+- Isso ocorre porque a força restauradora (gravidade) e a inércia aumentam proporcionalmente com a massa, anulando sua influência.
 
 ---
 
-## **4. Importância Prática**
+## **4. Aplicações Práticas**
 
-### **Aplicações no Dia a Dia**
+### **Utilizações no Dia a Dia**
 1. **Medida de Tempo:**  
-   - Relógios de pêndulo usam o período constante do pêndulo para medir o tempo com precisão.
+   - Relógios de pêndulo aproveitam o período constante do pêndulo para cronometragem precisa.
 
 2. **Engenharia:**  
-   - Projetos estruturais para resistir a vibrações (e.g., pontes e edifícios).
+   - Aplicado no design de estruturas resistentes a vibrações (e.g., pontes e edifícios).
 
 3. **Sismologia:**  
-   - Pêndulos detectam e medem movimentos sísmicos.
+   - Pêndulos são usados para detectar e medir movimentos sísmicos.
 
 4. **Experimentos de Física:**  
    - Determinação da aceleração gravitacional local (\(g\)).
@@ -87,7 +87,8 @@ O pêndulo simples consiste em:
 ---
 
 ## **5. Conclusão**
-O pêndulo simples é um modelo de **movimento periódico previsível**, proporcionando insights fundamentais sobre mecânica e oscilações. Seu estudo conecta fenômenos teóricos a aplicações práticas em engenharia e ciência.
+O estudo do pêndulo simples oferece um exemplo clássico de **movimento periódico previsível**, conectando conceitos teóricos a aplicações práticas na engenharia e na ciência. Ele proporciona uma base para compreender oscilações e sistemas dinâmicos.
+
 
 
 Projeto final de Fisica I escrito em JavaScript para construir uma simulação de pendulo com interaçao em tempo real.
