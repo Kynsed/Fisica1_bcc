@@ -1,10 +1,10 @@
-# **Pêndulo Simples**
+# **A Dinâmica do Pêndulo**
 
 Projeto final de Fisica I escrito em JavaScript
 
-## **1. Objetivo**
+## **1. Descrição básica do projeto**
 
-Construir uma simulação do pêndulo simples com interação em tempo real para facilitar a compreensão das suas propriedades físicas.
+Este projeto é uma simulação criada para ilustrar o comportamento de um pêndulo simples na Física. O objetivo é fornecer uma visualização gráfica do movimento oscilatório, permitindo o estudo e a compreensão dos conceitos envolvidos. A simulação mostra a trajetória de um pêndulo oscilando em diferentes condições, como variações no comprimento da corda e na gravidade.
 
 ---
 
