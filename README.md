@@ -1,9 +1,10 @@
 # **Pêndulo Simples**
 
-Projeto final de Fisica I escrito em JavaScript com objetivo de construir uma simulação do pêndulo simples com interação em tempo real.
+Projeto final de Fisica I escrito em JavaScript
 
 ## **1. Objetivo**
-Descrever o funcionamento do pêndulo simples através de uma abordagem que combina simulações e análises para facilitar a compreensão das suas propriedades físicas.
+
+Construir uma simulação do pêndulo simples com interação em tempo real para facilitar a compreensão das suas propriedades físicas.
 
 ---
 
