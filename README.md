@@ -21,6 +21,7 @@ Px - componente horizontal da força peso (N)
 Py - componente vertical da força peso (N)
 
 A fórmula mostrada a seguir é usada para calcular o período no pêndulo simples, ela relaciona o tempo de uma oscilação completa ao tamanho do fio e à aceleração da gravidade local.
+
 ![p](https://github.com/user-attachments/assets/049ae54a-5ccb-426f-9723-2638cd0af775)
 
 
