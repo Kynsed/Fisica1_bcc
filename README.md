@@ -36,44 +36,35 @@ O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme,
 ---
 
 
-## **4. Relações e Efeitos**
+## **4. Relações e Fatores Influentes**
 
-### **Comprimento do Fio (L)**
-- O comprimento do fio é **inversamente proporcional** à frequência de oscilação.
+### **Comprimento do Fio (\(L\))**
+- O comprimento \(L\) é **inversamente proporcional** à frequência.  
 - **Efeitos:**  
-- Aumentar L **aumenta o período** (ciclo mais lento).  
-- Diminuir L **reduz o período** (ciclo mais rápido).  
-- **Equação do Período (T):**   
-  T = 2π * sqrt(L / g)
+  - Aumentar \(L\) => **aumento no período (\(T\))**.  
+  - Diminuir \(L\) => **redução no período (\(T\))**.  
+- **Equação do Período:**  
+![Period Equation](./equation_3.png)
 
-  
-Onde:  
-- T: Período (tempo para um ciclo completo).  
-- L: Comprimento do fio.  
-- g: Aceleração gravitacional.
-
----
-
-### **Aceleração Gravitacional (g)**
-- A aceleração gravitacional **influencia diretamente a velocidade de oscilação**.  
+### **Aceleração Gravitacional (\(g\))**
+- A aceleração gravitacional (\(g\)) afeta diretamente a **velocidade da oscilação**.  
 - **Efeitos:**  
-- Aumentar g **acelera o pêndulo** (ciclos mais rápidos).  
-- Reduzir g **desacelera o pêndulo** (ciclos mais lentos).
+  - Aumentar \(g\) => ciclos **mais rápidos**.  
+  - Reduzir \(g\) => ciclos **mais lentos**.
 
----
-
-### **Amplitude (θ₀)**
-- O **ângulo inicial** (θ₀) determina a altura inicial do pêndulo.  
+### **Amplitude (\(θ₀\))**
+- O **ângulo inicial (\(θ₀\))** influencia a altura inicial.  
 - **Efeitos:**  
-- Para **ângulos pequenos** (< 15°), o movimento é harmônico e o período é constante.  
-- Para **ângulos grandes**, a aproximação sin(θ) ≈ θ não é válida, resultando em **movimento não linear** e ligeiro aumento no período.
+  - Para \(θ₀ < 15°\): Movimento harmônico simples, período constante.  
+  - Para \(θ₀ > 15°\): Movimento **não linear**, período aumenta levemente.
 
----
+
 
 ### **Massa da Bobina (m)**
 - A **massa da bobina não altera o período** ou a frequência do pêndulo (negligenciando a resistência do ar).  
 - Isso ocorre porque a força restauradora (gravidade) e a inércia aumentam proporcionalmente com a massa, anulando sua influência.
 
+---
 ---
 
 ## **5. Aplicações Práticas**
