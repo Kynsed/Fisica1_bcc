@@ -22,74 +22,82 @@ Um pêndulo simples consiste em:
 
 ---
 
-### **Equação do Movimento**
+## **3. Equação do Movimento**
 
 1. A equação geral que rege o movimento do pêndulo:  
-   $$ \frac{d^2\theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0 $$
+d²θ/dt² + (g/L) * sin(θ) = 0
 
-2. Para **pequenos ângulos** (\(\sin(\theta) \approx \theta\)):  
-   $$ \frac{d^2\theta}{dt^2} + \frac{g}{L} \theta = 0 $$
+
+2. Para **pequenos ângulos** (sin(θ) ≈ θ):  
+
 
    Esta forma reduzida caracteriza o **movimento harmônico simples**, no qual o pêndulo oscila simetricamente em torno da posição de equilíbrio.
 
 ---
 
-## **3. Relações e Efeitos**
 
-### **Comprimento do Fio (\(L\))**
+## **4. Relações e Efeitos**
+
+### **Comprimento do Fio (L)**
 - O comprimento do fio é **inversamente proporcional** à frequência de oscilação.
 - **Efeitos:**  
-  - Aumentar \(L\) **aumenta o período** (ciclo mais lento).  
-  - Diminuir \(L\) **reduz o período** (ciclo mais rápido).  
-- **Equação do Período (\(T\)):**  
-  $$ T = 2\pi \sqrt{\frac{L}{g}} $$  
-  Onde:  
-  - \(T\): Período (tempo para um ciclo completo).  
-  - \(L\): Comprimento do fio.  
-  - \(g\): Aceleração gravitacional.
+- Aumentar L **aumenta o período** (ciclo mais lento).  
+- Diminuir L **reduz o período** (ciclo mais rápido).  
+- **Equação do Período (T):**   
+  T = 2π * sqrt(L / g)
+
+  
+Onde:  
+- T: Período (tempo para um ciclo completo).  
+- L: Comprimento do fio.  
+- g: Aceleração gravitacional.
 
 ---
 
-### **Aceleração Gravitacional (\(g\))**
+### **Aceleração Gravitacional (g)**
 - A aceleração gravitacional **influencia diretamente a velocidade de oscilação**.  
 - **Efeitos:**  
-  - Aumentar \(g\) **acelera o pêndulo** (ciclos mais rápidos).  
-  - Reduzir \(g\) **desacelera o pêndulo** (ciclos mais lentos).
+- Aumentar g **acelera o pêndulo** (ciclos mais rápidos).  
+- Reduzir g **desacelera o pêndulo** (ciclos mais lentos).
 
 ---
 
-### **Amplitude (\(\theta_0\))**
-- O **ângulo inicial** (\(\theta_0\)) determina a altura inicial do pêndulo.  
+### **Amplitude (θ₀)**
+- O **ângulo inicial** (θ₀) determina a altura inicial do pêndulo.  
 - **Efeitos:**  
-  - Para **ângulos pequenos** (\(< 15^\circ\)), o movimento é harmônico e o período é constante.  
-  - Para **ângulos grandes**, a aproximação \(\sin(\theta) \approx \theta\) não é válida, resultando em **movimento não linear** e ligeiro aumento no período.
+- Para **ângulos pequenos** (< 15°), o movimento é harmônico e o período é constante.  
+- Para **ângulos grandes**, a aproximação sin(θ) ≈ θ não é válida, resultando em **movimento não linear** e ligeiro aumento no período.
 
 ---
 
-### **Massa da Bobina (\(m\))**
+### **Massa da Bobina (m)**
 - A **massa da bobina não altera o período** ou a frequência do pêndulo (negligenciando a resistência do ar).  
 - Isso ocorre porque a força restauradora (gravidade) e a inércia aumentam proporcionalmente com a massa, anulando sua influência.
 
 ---
 
-## **4. Aplicações Práticas**
+## **5. Aplicações Práticas**
 
 ### **Utilizações no Dia a Dia**
 1. **Medida de Tempo:**  
-   - Relógios de pêndulo aproveitam o período constante do pêndulo para cronometragem precisa.
+- Relógios de pêndulo aproveitam o período constante do pêndulo para cronometragem precisa.
 
 2. **Engenharia:**  
-   - Bola de Demolição
+- Bolas de demolição utilizam princípios semelhantes para maximizar impacto.
 
 3. **Sismologia:**  
-   - Pêndulos são usados para detectar e medir movimentos sísmicos.
+- Pêndulos são usados para detectar e medir movimentos sísmicos.
 
 4. **Experimentos de Física:**  
-   - Determinação da aceleração gravitacional local (\(g\)).
+- Determinação da aceleração gravitacional local (g).
 
 ---
 
-Projeto final de Fisica I escrito em JavaScript para construir uma simulação de pendulo com interaçao em tempo real.
+## **6. Conclusão**
+
+Este projeto é uma aplicação prática dos conceitos teóricos de movimento oscilatório, permitindo explorar as propriedades fundamentais do pêndulo simples por meio de uma abordagem interativa.
+
+
 
 # Compilação
 
