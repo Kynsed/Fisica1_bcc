@@ -24,6 +24,7 @@ O pêndulo simples é um exemplo clássico de movimento harmônico simples (para
 
 1. A equação geral que rege o movimento do pêndulo:  
 d²θ/dt² + (g/L) * sin(θ) = 0
+![p](https://github.com/user-attachments/assets/e0fe851a-274a-4b1c-84ac-072ec8f04195)
 
 
 2. Para **pequenos ângulos** (sin(θ) ≈ θ):  
