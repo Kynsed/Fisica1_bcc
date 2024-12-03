@@ -140,7 +140,7 @@ Para compilar:
 
 Este projeto foi desenvolvido por:
 
-- **Kevin Silva** : [Email 1]
+- **Kelvin Silva** : [Email 1]
 - **Gabriel Demba** : [Email 2]
 - **Wiltord Mosingi**: [wiltordmosingi@usp.br]
 
@@ -150,7 +150,7 @@ Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (202
 
 ## Materiais de Referência:
 
-- [Link para material 1](URL_1)
+- [Experimento pendulo simples Ufes](https://fisica.ufes.br/sites/fisica.ufes.br/files/field/anexo/experiencia_a8_-_pendulo_simples_e_pendulo_fisico.pdf)
 - [Link para material 2](URL_2)
 - [Link para material 3](URL_3)
 - [Link para material 4](URL_4)
