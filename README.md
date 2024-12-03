@@ -47,33 +47,29 @@ A fórmula mostrada a seguir é usada para calcular o período no pêndulo simpl
 ---
 
 
-## **4. Relações e Efeitos**
+## **4. Relações e Fatores Influentes**
 
-### **Comprimento do Fio (L)**
-- O comprimento do fio é **inversamente proporcional** à frequência de oscilação.
+### **Comprimento do Fio (\(L\))**
+- O comprimento \(L\) é **inversamente proporcional** à frequência.  
 - **Efeitos:**  
-- Aumentar L **aumenta o período** (ciclo mais lento).  
-- Diminuir L **reduz o período** (ciclo mais rápido).  
-
-  
-Onde:  
-- T: Período (tempo para um ciclo completo).  
-- L: Comprimento do fio.  
-- g: Aceleração gravitacional.
+  - Aumentar \(L\) => **aumento no período (\(T\))**.  
+  - Diminuir \(L\) => **redução no período (\(T\))**.  
+- **Equação do Período:**  
+  <img src="./equation_3.png" alt="Equação do Período" width="300px">
 
 
-### **Aceleração Gravitacional (g)**
-- A aceleração gravitacional **influencia diretamente a velocidade de oscilação**.  
+### **Aceleração Gravitacional (\(g\))**
+- A aceleração gravitacional (\(g\)) afeta diretamente a **velocidade da oscilação**.  
 - **Efeitos:**  
-- Aumentar g **acelera o pêndulo** (ciclos mais rápidos).  
-- Reduzir g **desacelera o pêndulo** (ciclos mais lentos).
+  - Aumentar \(g\) => ciclos **mais rápidos**.  
+  - Reduzir \(g\) => ciclos **mais lentos**.
 
 
-### **Amplitude (θ₀)**
-- O **ângulo inicial** (θ₀) determina a altura inicial do pêndulo.  
+### **Amplitude (\(θ₀\))**
+- O **ângulo inicial (\(θ₀\))** influencia a altura inicial.  
 - **Efeitos:**  
-- Para **ângulos pequenos** (< 15°), o movimento é harmônico e o período é constante.  
-- Para **ângulos grandes**, a aproximação sin(θ) ≈ θ não é válida, resultando em **movimento não linear** e ligeiro aumento no período.
+  - Para \(θ₀ < 15°\): Movimento harmônico simples, período constante.  
+  - Para \(θ₀ > 15°\): Movimento **não linear**, período aumenta levemente.
 
 
 ### **Massa da Bobina (m)**
@@ -173,6 +169,7 @@ Para compilar:
      
 
 ---
+
 
 Este projeto foi desenvolvido por:
 
