@@ -85,23 +85,23 @@ Onde:
 
 ### **Energia Potencial**
 - A energia potencial (\(U\)) é a energia armazenada devido à altura do pêndulo em relação à sua posição de equilíbrio.  
-- **Fórmula:**  
-![Energia Potencial](./potential_energy.png)  
+- **Equacao:**  
+<img src="./potential_energy.png" alt="Energia Potencial" width="300px">
 
 ### **Energia Cinética**
 - A energia cinética (\(K\)) é a energia associada ao movimento do pêndulo.  
-- **Fórmula:**  
-![Energia Cinética](./kinetic_energy.png)  
+- **Equacao:**  
+<img src="./kinetic_energy.png" alt="Energia Cinética" width="300px">
 
 ### **Energia Mecânica Total**
 - A energia mecânica total (\(E\)) é a soma da energia potencial e cinética do sistema.  
-- **Fórmula:**  
-![Energia Mecânica Total](./total_mechanical_energy.png)  
+- **Eguacao:**  
+<img src="./total_mechanical_energy.png" alt="Energia Mecânica Total" width="300px">
 
 ### **Conservação da Energia**
 - No movimento de um pêndulo ideal (sem resistência do ar ou atrito), a energia mecânica total é conservada:  
   - **Altura máxima (\(U_{máx}\)):** Toda a energia é potencial.  
-  - **Velocidade máxima (\(K_{máx}\)):** Toda a energia é cinética.  
+  - **Velocidade máxima (\(K_{máx}\)):** Toda a energia é cinética.
 
 
 ## **5. Aplicações Práticas**
