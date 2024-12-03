@@ -16,6 +16,7 @@ Como as forças peso e tração não se cancelam nesse contexto, já que isso s�
 A partir das equações horárias do movimento harmônico simples e das leis de Newton, é possível determinar um conjunto de equações exclusivas para os pêndulos simples, para isso, dizemos que a resultante entre a força peso e a força de tração é uma força centrípeta. Além disso, a força restauradora do movimento pendular é a componente horizontal do peso:
 
 ![p](https://github.com/user-attachments/assets/64e54e0f-a57e-4ed2-b7f6-108e3bf362b9)
+
 Px - componente horizontal da força peso (N)
 Py - componente vertical da força peso (N)
 
