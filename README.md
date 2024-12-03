@@ -4,7 +4,7 @@
 ##  Descrição básica do projeto
 
 Este projeto é uma simulação criada para ilustrar o comportamento de um pêndulo simples na Física. O objetivo é fornecer uma visualização gráfica do movimento oscilatório, permitindo o estudo e a compreensão dos conceitos envolvidos. A simulação mostra a trajetória de um pêndulo oscilando em diferentes condições, como variações no comprimento da corda e na gravidade.
-![p](https://github.com/user-attachments/assets/1ebc66e5-7cb8-4064-b6cc-947c417c39c7)
+![p](https://github.com/user-attachments/assets/4d0aec33-c7d6-4356-a312-97a787f06f28)
 
 ---
 
