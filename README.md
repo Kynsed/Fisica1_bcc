@@ -156,9 +156,24 @@ Para compilar:
 
   6. Abra o diretório do projeto -> build, abra o arquivo index-en.html para inciar a simulação
      
-     
-         
 
-     
+---
+
+Este projeto foi desenvolvido por:
+
+- **Kevin Silva** : [Email 1]
+- **Gabriel Demba** : [Email 2]
+- **Wiltord Mosingi**: [wiltordmosingi@usp.br]
+
+Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
+
+
+## **Referências**  
+- [1] **Dinâmica-v4 (Notas de aula)**, _7600105 - Física Básica I_ - USP.  
+- [2] **Pêndulo Simples e Pêndulo Físico**, UFES.  
+  [Acesse o PDF](https://fisica.ufes.br/sites/fisica.ufes.br/files/field/anexo/experiencia_a8_-_pendulo_simples_e_pendulo_fisico.pdf)  
+- [3] **Explicação em vídeo**.  
+  [Assista no YouTube](https://www.youtube.com/watch?v=sJG-rXBbmCc&t=8s)  
+
      
          
