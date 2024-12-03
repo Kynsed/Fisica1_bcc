@@ -11,8 +11,17 @@ Este projeto é uma simulação criada para ilustrar o comportamento de um pênd
 
 ### Pêndulo Simples
 O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme, ou seja, um corpo com dimensões insignificantes, presa a um fio de massa desprezível e inextensível capaz de oscilar em torno de uma posição fixa. Graças à sua simplicidade, esse pêndulo é bastante usado durante o estudo do movimento harmônico simples. 
+O pêndulo simples é uma aproximação em que não existem forças dissipativas, ou seja, forças de atrito ou de arraste, atuando sobre quaisquer componentes do sistema. Nesses pêndulos, o movimento oscilatório surge em decorrência da ação das forças peso e tração, exercida por um fio.
+Como as forças peso e tração não se cancelam nesse contexto, já que isso só acontece na posição de equilíbrio, surge, dessa forma, uma força resultante de natureza centrípeta, fazendo o pêndulo oscilar em torno de um ponto de equilíbrio.
+A partir das equações horárias do movimento harmônico simples e das leis de Newton, é possível determinar um conjunto de equações exclusivas para os pêndulos simples, para isso, dizemos que a resultante entre a força peso e a força de tração é uma força centrípeta. Além disso, a força restauradora do movimento pendular é a componente horizontal do peso:
 
-![p](https://github.com/user-attachments/assets/4d0aec33-c7d6-4356-a312-97a787f06f28)
+![p](https://github.com/user-attachments/assets/64e54e0f-a57e-4ed2-b7f6-108e3bf362b9)
+Px - componente horizontal da força peso (N)
+Py - componente vertical da força peso (N)
+
+A fórmula mostrada a seguir é usada para calcular o período no pêndulo simples, ela relaciona o tempo de uma oscilação completa ao tamanho do fio e à aceleração da gravidade local.
+![p](https://github.com/user-attachments/assets/049ae54a-5ccb-426f-9723-2638cd0af775)
+
 
 **Suposições Adotadas:**
 - O fio é **sem massa** e **inextensível**.  
@@ -36,34 +45,43 @@ O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme,
 ---
 
 
-## **4. Relações e Fatores Influentes**
+## **4. Relações e Efeitos**
 
-### **Comprimento do Fio (\(L\))**
-- O comprimento \(L\) é **inversamente proporcional** à frequência.  
+### **Comprimento do Fio (L)**
+- O comprimento do fio é **inversamente proporcional** à frequência de oscilação.
 - **Efeitos:**  
-  - Aumentar \(L\) => **aumento no período (\(T\))**.  
-  - Diminuir \(L\) => **redução no período (\(T\))**.  
-- **Equação do Período:**  
-![Period Equation](./equation_3.png)
+- Aumentar L **aumenta o período** (ciclo mais lento).  
+- Diminuir L **reduz o período** (ciclo mais rápido).  
+- **Equação do Período (T):**   
+  T = 2π * sqrt(L / g)
 
-### **Aceleração Gravitacional (\(g\))**
-- A aceleração gravitacional (\(g\)) afeta diretamente a **velocidade da oscilação**.  
+  
+Onde:  
+- T: Período (tempo para um ciclo completo).  
+- L: Comprimento do fio.  
+- g: Aceleração gravitacional.
+
+---
+
+### **Aceleração Gravitacional (g)**
+- A aceleração gravitacional **influencia diretamente a velocidade de oscilação**.  
 - **Efeitos:**  
-  - Aumentar \(g\) => ciclos **mais rápidos**.  
-  - Reduzir \(g\) => ciclos **mais lentos**.
+- Aumentar g **acelera o pêndulo** (ciclos mais rápidos).  
+- Reduzir g **desacelera o pêndulo** (ciclos mais lentos).
 
-### **Amplitude (\(θ₀\))**
-- O **ângulo inicial (\(θ₀\))** influencia a altura inicial.  
+---
+
+### **Amplitude (θ₀)**
+- O **ângulo inicial** (θ₀) determina a altura inicial do pêndulo.  
 - **Efeitos:**  
-  - Para \(θ₀ < 15°\): Movimento harmônico simples, período constante.  
-  - Para \(θ₀ > 15°\): Movimento **não linear**, período aumenta levemente.
+- Para **ângulos pequenos** (< 15°), o movimento é harmônico e o período é constante.  
+- Para **ângulos grandes**, a aproximação sin(θ) ≈ θ não é válida, resultando em **movimento não linear** e ligeiro aumento no período.
 
-
+---
 
 ### **Massa da Bobina (m)**
 - A **massa da bobina não altera o período** ou a frequência do pêndulo (negligenciando a resistência do ar).  
 - Isso ocorre porque a força restauradora (gravidade) e a inércia aumentam proporcionalmente com a massa, anulando sua influência.
-
 
 ---
 
@@ -134,26 +152,8 @@ Para compilar:
   5. Execute o comando ```make``` para gerar o .html
 
   6. Abra o diretório do projeto -> build, abra o arquivo index-en.html para inciar a simulação
-
----     
      
-
-Este projeto foi desenvolvido por:
-
-- **Kelvin Silva** : [Email 1]
-- **Gabriel Demba** : [Email 2]
-- **Wiltord Mosingi**: [wiltordmosingi@usp.br]
-
-Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
-
----
-
-## Materiais de Referência:
-
-- [Experimento pendulo simples Ufes](https://fisica.ufes.br/sites/fisica.ufes.br/files/field/anexo/experiencia_a8_-_pendulo_simples_e_pendulo_fisico.pdf)
-- [Link para material 2](URL_2)
-- [Link para material 3](URL_3)
-- [Link para material 4](URL_4)
+     
          
 
      
