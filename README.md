@@ -5,7 +5,6 @@
 
 Este projeto é uma simulação criada para ilustrar o comportamento de um pêndulo simples na Física. O objetivo é fornecer uma visualização gráfica do movimento oscilatório, permitindo o estudo e a compreensão dos conceitos envolvidos. A simulação mostra a trajetória de um pêndulo oscilando em diferentes condições, como variações no comprimento da corda e na gravidade.
 
----
 
 ## Conceitos de Física e Modelo Matemático
 
@@ -55,8 +54,6 @@ A fórmula mostrada a seguir é usada para calcular o período no pêndulo simpl
 - **Efeitos:**  
 - Aumentar L **aumenta o período** (ciclo mais lento).  
 - Diminuir L **reduz o período** (ciclo mais rápido).  
-- **Equação do Período (T):**   
-  T = 2π * sqrt(L / g)
 
   
 Onde:  
@@ -64,7 +61,6 @@ Onde:
 - L: Comprimento do fio.  
 - g: Aceleração gravitacional.
 
----
 
 ### **Aceleração Gravitacional (g)**
 - A aceleração gravitacional **influencia diretamente a velocidade de oscilação**.  
@@ -72,7 +68,6 @@ Onde:
 - Aumentar g **acelera o pêndulo** (ciclos mais rápidos).  
 - Reduzir g **desacelera o pêndulo** (ciclos mais lentos).
 
----
 
 ### **Amplitude (θ₀)**
 - O **ângulo inicial** (θ₀) determina a altura inicial do pêndulo.  
@@ -80,17 +75,37 @@ Onde:
 - Para **ângulos pequenos** (< 15°), o movimento é harmônico e o período é constante.  
 - Para **ângulos grandes**, a aproximação sin(θ) ≈ θ não é válida, resultando em **movimento não linear** e ligeiro aumento no período.
 
----
 
 ### **Massa da Bobina (m)**
 - A **massa da bobina não altera o período** ou a frequência do pêndulo (negligenciando a resistência do ar).  
 - Isso ocorre porque a força restauradora (gravidade) e a inércia aumentam proporcionalmente com a massa, anulando sua influência.
 
----
+
+## **Energia no Movimento do Pêndulo**
+
+### **Energia Potencial**
+- A energia potencial (\(U\)) é a energia armazenada devido à altura do pêndulo em relação à sua posição de equilíbrio.  
+- **Fórmula:**  
+![Energia Potencial](./potential_energy.png)  
+
+### **Energia Cinética**
+- A energia cinética (\(K\)) é a energia associada ao movimento do pêndulo.  
+- **Fórmula:**  
+![Energia Cinética](./kinetic_energy.png)  
+
+### **Energia Mecânica Total**
+- A energia mecânica total (\(E\)) é a soma da energia potencial e cinética do sistema.  
+- **Fórmula:**  
+![Energia Mecânica Total](./total_mechanical_energy.png)  
+
+### **Conservação da Energia**
+- No movimento de um pêndulo ideal (sem resistência do ar ou atrito), a energia mecânica total é conservada:  
+  - **Altura máxima (\(U_{máx}\)):** Toda a energia é potencial.  
+  - **Velocidade máxima (\(K_{máx}\)):** Toda a energia é cinética.  
+
 
 ## **5. Aplicações Práticas**
 
-### **Utilizações no Dia a Dia**
 1. **Medida de Tempo:**  
 - Relógios de pêndulo aproveitam o período constante do pêndulo para cronometragem precisa.
 
@@ -103,12 +118,12 @@ Onde:
 4. **Experimentos de Física:**  
 - Determinação da aceleração gravitacional local (g).
 
----
 
 ## **6. Conclusão**
 
 Este projeto é uma aplicação prática dos conceitos teóricos de movimento oscilatório, permitindo explorar as propriedades fundamentais do pêndulo simples por meio de uma abordagem interativa.
 
+---
 
 
 # Compilação
