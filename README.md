@@ -9,7 +9,7 @@ Descrever o funcionamento do pêndulo simples através de uma abordagem que comb
 
 ### **Definição de um Pêndulo Simples**
 Um pêndulo simples consiste em:
-- Uma **massa (bob)** conectada a um fio ou haste.
+- Uma **massa (bob)** conectada a um fio.
 - Um **ponto de suspensão**, permitindo que a massa oscile livremente.
 
 **Suposições Adotadas:**
@@ -76,7 +76,7 @@ Um pêndulo simples consiste em:
    - Relógios de pêndulo aproveitam o período constante do pêndulo para cronometragem precisa.
 
 2. **Engenharia:**  
-   - Aplicado no design de estruturas resistentes a vibrações (e.g., pontes e edifícios).
+   - Bola de Demolição
 
 3. **Sismologia:**  
    - Pêndulos são usados para detectar e medir movimentos sísmicos.
@@ -85,10 +85,6 @@ Um pêndulo simples consiste em:
    - Determinação da aceleração gravitacional local (\(g\)).
 
 ---
-
-## **5. Conclusão**
-O estudo do pêndulo simples oferece um exemplo clássico de **movimento periódico previsível**, conectando conceitos teóricos a aplicações práticas na engenharia e na ciência. Ele proporciona uma base para compreender oscilações e sistemas dinâmicos.
-
 
 
 # Fisica1_bcc
