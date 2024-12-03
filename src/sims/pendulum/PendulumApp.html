@@ -1,0 +1,23 @@
+#define #TOP_DIR ../..
+#define #APP_PATH sims.pendulum.PendulumApp
+#include "#TOP_DIR/macros.html"
+#include "#TOP_DIR/macros_tab.html"
+#DOC_TYPE
+<html lang="en">
+<head>
+#META_TAGS
+#HIDE_ALL
+</head>
+<body>
+<!-- Linha de título removida -->
+#HEADER_BAR
+#CONTROLS_CONTAINER
+#LOAD_APP
+#BUILD_APP
+#SHOW_ALL
+<script>
+  app.eval('DRIVE_AMPLITUDE=0;DAMPING=0.1;GRAVITY=9.8;ANGLE=2.5;ANGLE_VELOCITY=0;save;');
+</script>
+#START_APP
+</body>
+</html>
