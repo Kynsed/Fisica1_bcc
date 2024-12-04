@@ -1,28 +1,25 @@
-# **A Dinâmica do Pêndulo**
+# **Pêndulo Simples**
 
 
 ##  Descrição básica do projeto
 
-Este projeto é uma simulação criada para ilustrar o comportamento de um pêndulo simples na Física. O objetivo é fornecer uma visualização gráfica do movimento oscilatório, permitindo o estudo e a compreensão dos conceitos envolvidos. A simulação mostra a trajetória de um pêndulo oscilando em diferentes condições, como variações no comprimento da corda e na gravidade.
+Este projeto é uma simulação criada para ilustrar o comportamento de um pêndulo simples. O objetivo é fornecer uma visualização gráfica do movimento oscilatório, permitindo o estudo e a compreensão dos conceitos envolvidos. A simulação mostra a trajetória de um pêndulo oscilando em diferentes condições, alterando-se variaveis como gravidade, massa, arrasto.
 
 
 ## Conceitos de Física e Modelo Matemático
 
 ### Pêndulo Simples
-O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme, ou seja, um corpo com dimensões insignificantes, presa a um fio de massa desprezível e inextensível capaz de oscilar em torno de uma posição fixa. Graças à sua simplicidade, esse pêndulo é bastante usado durante o estudo do movimento harmônico simples. 
-O pêndulo simples é uma aproximação em que não existem forças dissipativas, ou seja, forças de atrito ou de arraste, atuando sobre quaisquer componentes do sistema. Nesses pêndulos, o movimento oscilatório surge em decorrência da ação das forças peso e tração, exercida por um fio.
-Como as forças peso e tração não se cancelam nesse contexto, já que isso só acontece na posição de equilíbrio, surge, dessa forma, uma força resultante de natureza centrípeta, fazendo o pêndulo oscilar em torno de um ponto de equilíbrio.
-A partir das equações horárias do movimento harmônico simples e das leis de Newton, é possível determinar um conjunto de equações exclusivas para os pêndulos simples, para isso, dizemos que a resultante entre a força peso e a força de tração é uma força centrípeta. Além disso, a força restauradora do movimento pendular é a componente horizontal do peso:
+O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme, preso a um fio de massa desprezível e inextensível capaz de oscilar em torno de uma posição fixa. Graças à sua simplicidade, esse pêndulo é bastante usado durante o estudo do movimento harmônico simples. 
 
-![p](https://github.com/user-attachments/assets/64e54e0f-a57e-4ed2-b7f6-108e3bf362b9)
+Para pequenas oscilações, o pêndulo simples apresenta um comportamento linear, o que significa que sua equação de movimento podem ser descrita por uma equação linear (sem termos ao quadrado ou funções seno e cosseno). No entanto, para oscilações maiores, o comportamento torna-se fortemente não linear, com a introdução de um termo de seno na equação de movimento.
 
-Px - componente horizontal da força peso (N)
+Para modelagem da simulação definimos as seguintes variaveis:
 
-Py - componente vertical da força peso (N)
-
-A fórmula mostrada a seguir é usada para calcular o período no pêndulo simples, ela relaciona o tempo de uma oscilação completa ao tamanho do fio e à aceleração da gravidade local.
-
-![p](https://github.com/user-attachments/assets/049ae54a-5ccb-426f-9723-2638cd0af775)
+θ = Angulo do pendulo (vertical = 0)
+R = Comprimento do fio
+T = Tensão no fio
+m = Massa do corpo 
+g = Aceleração da gravidade
 
 
 **Suposições Adotadas:**
@@ -173,7 +170,7 @@ Para compilar:
 
 Este projeto foi desenvolvido por:
 
-- **Kevin Silva** : [Email 1]
+- **Kevin Silva** : kelvinr.silv@usp.br
 - **Gabriel Demba** : [Email 2]
 - **Wiltord Mosingi**: [wiltordmosingi@usp.br]
 
@@ -181,11 +178,7 @@ Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (202
 
 
 ## **Referências**  
-- [1] **Dinâmica-v4 (Notas de aula)**, _7600105 - Física Básica I_ - USP.  
-- [2] **Pêndulo Simples e Pêndulo Físico**, UFES.  
-  [Acesse o PDF](https://fisica.ufes.br/sites/fisica.ufes.br/files/field/anexo/experiencia_a8_-_pendulo_simples_e_pendulo_fisico.pdf)  
-- [3] **Explicação em vídeo**.  
-  [Assista no YouTube](https://www.youtube.com/watch?v=sJG-rXBbmCc&t=8s)  
-
-     
+- [1] BERNARDES, Esmerindo de Sousa. Dinâmica-v4 (Notas de aula). Disponivel em https://edisciplinas.usp.br/course/view.php?id=121494.
+- [2] NEUMANN, Erik. Einfaches Pendel. Disponivel em (https://www.researchgate.net/institution/Massachusetts-Institute-of-Technology).
+- [3] LEWIN, Walter. For the Love of Physics - Walter Lewin - May 16, 2011. Disponivel em (https://www.youtube.com/watch?v=sJG-rXBbmCc&t=8s).      
          
