@@ -213,7 +213,7 @@ Este projeto foi desenvolvido por:
 
 - **Kevin Silva** : kelvinr.silv@usp.br
 - **Gabriel Demba** : [Email 2]
-- **Wiltord Mosingi**: [wiltordmosingi@usp.br]
+- **Wiltord Mosingi**: wiltordmosingi@usp.br
 
 Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
 
@@ -221,5 +221,5 @@ Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (202
 - [1] NEUMANN, Erik. Einfaches Pendel.
 - [2] GOLLUB.P Jerry, BAKER.L Gregory. Chaotic Dynamics: An Introduction.
 - [3] BERNARDES, Esmerindo de Sousa. Dinâmica-v4 (Notas de aula).
-- [3] LEWIN, Walter. For the Love of Physics - Walter Lewin - May 16, 2011. Disponivel em (https://www.youtube.com/watch?v=sJG-rXBbmCc&t=8s).      
+- [4] LEWIN, Walter. For the Love of Physics - Walter Lewin - May 16, 2011. Disponivel em (https://www.youtube.com/watch?v=sJG-rXBbmCc&t=8s).      
          
