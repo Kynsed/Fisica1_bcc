@@ -1,118 +1,152 @@
 # **Pêndulo Simples**
 
-
 ##  Descrição básica do projeto
 
 Este projeto é uma simulação criada para ilustrar o comportamento de um pêndulo simples. O objetivo é fornecer uma visualização gráfica do movimento oscilatório, permitindo o estudo e a compreensão dos conceitos envolvidos. A simulação mostra a trajetória de um pêndulo oscilando em diferentes condições, alterando-se variaveis como gravidade, massa, arrasto.
 
+## Modelo Matemático
 
-## Conceitos de Física e Modelo Matemático
-
-### Pêndulo Simples
 O pêndulo simples é um sistema mecânico que consiste em uma massa puntiforme, preso a um fio de massa desprezível e inextensível capaz de oscilar em torno de uma posição fixa. Graças à sua simplicidade, esse pêndulo é bastante usado durante o estudo do movimento harmônico simples. 
 
 Para pequenas oscilações, o pêndulo simples apresenta um comportamento linear, o que significa que sua equação de movimento podem ser descrita por uma equação linear (sem termos ao quadrado ou funções seno e cosseno). No entanto, para oscilações maiores, o comportamento torna-se fortemente não linear, com a introdução de um termo de seno na equação de movimento.
 
 Para modelagem da simulação definimos as seguintes variaveis:
 
-1. θ = Angulo do pendulo (vertical = 0)
-2. R = Comprimento do fio
-3. T = Tensão no fio
-4. m = Massa do corpo 
-5. g = Aceleração da gravidade
+- θ = Angulo do pendulo (vertical = 0)
+- R = Comprimento do fio
+- T = Tensão no fio
+- m = Massa do corpo
+- g = Aceleração da gravidade
 
-Iremos deduzir a equação de movimento para o pêndulo utilizando o análogo rotacional da segunda lei de Newton para movimento em torno de um eixo fixo, que é 
-𝜏 = 𝐼 𝛼, onde:
+Iremos deduzir a equação de movimento para o pêndulo a partir do análogo rotacional da segunda lei de Newton para movimento em torno de um eixo fixo, que é 
+𝜏 = 𝐼 𝛼, onde 𝜏 é o torque resultante, 𝐼 é a inercia rotacional e 𝛼 é a aceleração angular.
 
-1. 𝜏 é o torque resultante.
-2. 𝐼 é a inercia rotacional.
-3. 𝛼 é a aceleração angular.
+A inércia rotacional em relação ao ponto de suspensão é ![equação](https://latex.codecogs.com/svg.latex?I%20%3D%20mR%5E2). O torque pode ser calculado como o produto vetorial ![Torque Vetorial](https://latex.codecogs.com/svg.latex?\vec{\tau}%20=%20\vec{r}%20\times%20\vec{F}). O módulo do torque devido à gravidade é dado por:
 
-A inércia rotacional em relação ao ponto de suspensão é ![equação](https://latex.codecogs.com/svg.latex?I%20%3D%20mR%5E2). O torque pode ser calculado como o produto vetorial ![equação](https://latex.codecogs.com/svg.latex?%5Cr%20%5Ctimes%20F). O módulo do torque devido à gravidade é dado por:
-
-                                                ![equação](https://latex.codecogs.com/svg.latex?%5Ctau%20%3D%20-Rm%20g%20%5Csin%5Ctheta)
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?%5Ctau%20%3D%20-Rm%20g%20%5Csin%5Ctheta" alt="Torque Gravitacional">
+</p>
 
 Assim, temos:
 
-                                                ![equação](https://latex.codecogs.com/svg.latex?-Rm%20g%20%5Csin%5Ctheta%20%3D%20mR%5E2%20%5Calpha)
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?-Rm%20g%20%5Csin%5Ctheta%20%3D%20mR%5E2%20%5Calpha" alt="Equação Final">
+</p>
 
+A qual simplifica para:
 
-**Suposições Adotadas:**
-- O fio é **sem massa** e **inextensível**.  
-- O sistema está sob uma **força gravitacional uniforme**.  
-- Desconsidera-se a resistência do ar.
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\theta''%20=%20-%5Cfrac{g}{R}%20%5Csin%20%5Ctheta" alt="Equação">
+</p>
 
----
-
-## **3. Equação do Movimento**
-
-1. A equação geral que rege o movimento do pêndulo:  
-
-![p](https://github.com/user-attachments/assets/e0fe851a-274a-4b1c-84ac-072ec8f04195)
-
-
-2. Para **pequenos ângulos** (sin(θ) ≈ θ):  
-
-
-   Esta forma reduzida caracteriza o **movimento harmônico simples**, no qual o pêndulo oscila simetricamente em torno da posição de equilíbrio.
+Essa é a nossa EDO para o pêndulo.
 
 ---
 
+A maioria das pessoas não estão muito confortáveis com os conceitos de inércia rotacional e torque. Para mostrar que não há nada de novo na versão rotacional da segunda lei de Newton, iremos chegar na EDO acima utilizando a segunda lei de Newton <img src="https://latex.codecogs.com/svg.latex?\vec{F}%20=%20m%20\vec{a}" alt="F = ma">, em um sistema de coordenadas polares. Como veremos, esse metódo envolve um pouco mais de manipulação algébrica.
 
-## **4. Relações e Fatores Influentes**
+Considerando uma base ortonomal, ![Versores](https://latex.codecogs.com/svg.latex?\hat{i},%20\hat{j}).
 
-### **Comprimento do Fio (\(L\))**
-- O comprimento \(L\) é **inversamente proporcional** à frequência.  
-- **Efeitos:**  
-  - Aumentar \(L\) => **aumento no período (\(T\))**.  
-  - Diminuir \(L\) => **redução no período (\(T\))**.  
-- **Equação do Período:**  
-  <img src="./equation_3.png" alt="Equação do Período" width="300px">
+A cinemática do pêndulo é então a seguinte:
 
+- **Posição** :  
+  <p align="center">
+    <img src="https://latex.codecogs.com/svg.latex?\vec{r}%20%3D%20R%20\sin%20\theta%20\hat{i}%20-%20R%20\cos%20\theta%20\hat{j}" alt="Posição">.
+  </p>
 
-### **Aceleração Gravitacional (\(g\))**
-- A aceleração gravitacional (\(g\)) afeta diretamente a **velocidade da oscilação**.  
-- **Efeitos:**  
-  - Aumentar \(g\) => ciclos **mais rápidos**.  
-  - Reduzir \(g\) => ciclos **mais lentos**.
+- **Velocidade**:  
+  <p align="center">
+    <img src="https://latex.codecogs.com/svg.latex?\vec{v}%20%3D%20\vec{\dot{r}}%20%3D%20R%20\dot{\theta}%20\cos\theta%20\hat{i}%20+%20R%20\dot{\theta}%20\sin\theta%20\hat{j}" alt="Velocidade">.
+  </p>
 
+- **Aceleração** :  
+  <p align="center">
+    <img src="https://latex.codecogs.com/svg.latex?\vec{a}%20%3D%20\vec{\ddot{r}}%20%3D%20R%20\left(\ddot{\theta}%20\cos\theta%20-%20\dot{\theta}^2%20\sin\theta\right)%20\hat{i}%20+%20R%20\left(\ddot{\theta}%20\sin\theta%20+%20\dot{\theta}^2%20\cos\theta\right)%20\hat{j}" alt="Aceleração">.
+  </p>
 
-### **Amplitude (\(θ₀\))**
-- O **ângulo inicial (\(θ₀\))** influencia a altura inicial.  
-- **Efeitos:**  
-  - Para \(θ₀ < 15°\): Movimento harmônico simples, período constante.  
-  - Para \(θ₀ > 15°\): Movimento **não linear**, período aumenta levemente.
+A posição é obtida por uma aplicação simples de trigonometria. A velocidade e a aceleração são, então, as primeiras e segundas derivadas da posição. Em seguida, desenhamos o diagrama de forças que atuam sobre o corpo. As forças são a tensão na corda T e o peso. Então, podemos escrever a força resultante como:
 
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\vec{F}%20=%20T%20\cos%20\theta%20\hat{j}%20-%20T%20\sin%20\theta%20\hat{i}%20-%20mg%20\hat{j}" alt="Força Total">.
+</p>
 
-### **Massa da Bobina (m)**
-- A **massa da bobina não altera o período** ou a frequência do pêndulo (negligenciando a resistência do ar).  
-- Isso ocorre porque a força restauradora (gravidade) e a inércia aumentam proporcionalmente com a massa, anulando sua influência.
+Em seguida aplicando a segunda lei de Newton <img src="https://latex.codecogs.com/svg.latex?\vec{F}%20=%20m%20\vec{a}" alt="F = ma"> e a equação da aceleração que encontramos anteriormente, temos:
 
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?T%20\cos%20\theta%20\hat{j}%20-%20T%20\sin%20\theta%20\hat{i}%20-%20m%20g%20\hat{j}%20=%20m%20R\left(\theta''%20\cos%20\theta%20\hat{i}%20-%20\theta'^2%20\sin%20\theta%20\hat{i}%20+%20\theta''%20\sin%20\theta%20\hat{j}%20+%20\theta'^2%20\cos%20\theta%20\hat{j}\right)" alt="Equação Vetorial">.
+</p>
 
-## **Energia no Movimento do Pêndulo**
+Escrevendo as componentes vetoriais da equação acima como equações separadas. Isso nos dá duas equações simultâneas: a primeira para o componente \( \mathbf{i} \) e a segunda para o componente \( \mathbf{j} \).
 
-### **Energia Potencial**
-- A energia potencial (\(U\)) é a energia armazenada devido à altura do pêndulo em relação à sua posição de equilíbrio.  
-- **Equacao:**  
-<img src="./potential_energy.png" alt="Energia Potencial" width="300px">
+Primeira equação:
+  <p align="center">  
+     <img src="https://latex.codecogs.com/svg.latex?-T%20%5Csin%20%5Ctheta%20%3D%20m%20R%28%5Cddot%7B%5Ctheta%7D%20%5Ccos%20%5Ctheta%20-%20%5Cdot%7B%5Ctheta%7D%5E2%20%5Csin%20%5Ctheta%29">. (1)
+  </p>
 
-### **Energia Cinética**
-- A energia cinética (\(K\)) é a energia associada ao movimento do pêndulo.  
-- **Equacao:**  
-<img src="./kinetic_energy.png" alt="Energia Cinética" width="300px">
+Segunda equação:  
+  <p align="center">
+     <img src="https://latex.codecogs.com/svg.latex?T%20%5Ccos%20%5Ctheta%20-%20m%20g%20%3D%20m%20R%28%5Cddot%7B%5Ctheta%7D%20%5Csin%20%5Ctheta%20+%20%5Cdot%7B%5Ctheta%7D%5E2%20%5Ccos%20%5Ctheta%29">. (2)
+  </p>
 
-### **Energia Mecânica Total**
-- A energia mecânica total (\(E\)) é a soma da energia potencial e cinética do sistema.  
-- **Eguacao:**  
-<img src="./total_mechanical_energy.png" alt="Energia Mecânica Total" width="300px">
+Agora devemos eliminar a variavel desconhecida \( T \). Multiplicando 1 por \( \cos \theta \) , temos:
 
-### **Conservação da Energia**
-- No movimento de um pêndulo ideal (sem resistência do ar ou atrito), a energia mecânica total é conservada:  
-  - **Altura máxima (\(U_{máx}\)):** Toda a energia é potencial.  
-  - **Velocidade máxima (\(K_{máx}\)):** Toda a energia é cinética.
+ <p align="center">  
+  <img src="https://latex.codecogs.com/svg.latex?-T%20%5Csin%20%5Ctheta%20%5Ccos%20%5Ctheta%20%3D%20m%20R%28%5Cddot%7B%5Ctheta%7D%20%5Ccos%5E2%20%5Ctheta%20-%20%5Cdot%7B%5Ctheta%7D%5E2%20%5Csin%20%5Ctheta%20%5Ccos%20%5Ctheta%29">. (1.1)
+   </p>
 
+Multiplicando 2 por \( \sin \theta \)
+ 
+ <p align="center"> 
+  <img src="https://latex.codecogs.com/svg.latex?T%20%5Ccos%20%5Ctheta%20%5Csin%20%5Ctheta%20-%20m%20g%20%5Csin%20%5Ctheta%20%3D%20m%20R%28%5Cddot%7B%5Ctheta%7D%20%5Csin%5E2%20%5Ctheta%20+%20%5Cdot%7B%5Ctheta%7D%5E2%20%5Csin%20%5Ctheta%20%5Ccos%20%5Ctheta%29">. (1.2)
+  </p>
 
-## **5. Aplicações Práticas**
+Substituindo \( T \cos \theta \sin \theta \) de 1.1 em 1.2 obtemos:
+ 
+ <p align="center">
+   <img src="https://latex.codecogs.com/svg.latex?-%5Cddot%7B%5Ctheta%7D%20%5Ccos%5E2%20%5Ctheta%20%2B%20%5Cdot%7B%5Ctheta%7D%5E2%20%5Csin%20%5Ctheta%20%5Ccos%20%5Ctheta%20%3D%20%5Cddot%7B%5Ctheta%7D%20%5Csin%5E2%20%5Ctheta%20%2B%20%5Cdot%7B%5Ctheta%7D%5E2%20%5Csin%20%5Ctheta%20%5Ccos%20%5Ctheta%20%2B%20%5Cfrac%7Bg%7D%7BR%7D%20%5Csin%20%5Ctheta">.
+</p>
+
+Com a identidade trigonométrica \( \cos^2 \theta + \sin^2 \theta = 1 \), isso se simplifica para a equação:
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\ddot{\theta}%20=%20-\frac{g}{R}%20\sin%20\theta" alt="\ddot{\theta} = -\frac{g}{R} \sin \theta">. (2)
+</p>
+
+Como queriamos demonstrar.
+
+---
+
+Existe ainda uma terceira maneira de obtermos a EDO do pendulo simples. Utlizando o método indireto baseado em energia associada com termos "Lagrangeana", "Equação de Euler-Lagrange", "Hamiltoniano", e outros. Não abordaremos esse terceiro método aqui.
+
+---
+Para resolver a EDO obtida optamos pelo método numérico para gerar a simulação. Usamos como padrão o método de Runge-Kutta para resolver os sistemas de equações diferenciais ordinárias. Primeiro, definimos uma variável para a velocidade angular 𝜔 = 𝜃′. Em seguida, podemos escrever a equação de segunda ordem (2) como duas equações de primeira ordem.
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\theta'%20=%20\omega" alt="θ' = ω">.
+</p>
+
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\omega'%20=%20-\frac{g}{R}%20\sin%20\theta" alt="ω' = -g/R sin θ">.
+</p>
+
+Essa é a forma necessária para para aplicação do método de Runge-Kutta. Apesar desse método numérico ser o padrão o qual a simulção é iniciada, outros métodos podem ser utilizados em tempo real. Estão definidos os seguintes métodos: Euler, Euler modificado, Euler modificado adaptativo, Runge-Kutta adaptativo.
+
+---
+
+## **BÔNUS**
+
+A nossa equação de movimento coincide com a equação 3.1 do livro Chaotic Dynamics: An Introduction - Baker/Gollub. No livro em questão Baker/Gollub estabelece alguns parâmetros para transformar o MHS do pêndulo em um movimento caótico. Tente utlizar o simulador com os seguintes parâmetros:
+
++ Comprimento do fio = 1.0
++ Massa = 1.0
++ Gravidade = 1.0
++ Amplitude de impulso = 1.15
++ Frequência de impulso = 2/3
++ Arrasto = 0.5
+
+---
+
+## **Aplicações Práticas**
 
 1. **Medida de Tempo:**  
 - Relógios de pêndulo aproveitam o período constante do pêndulo para cronometragem precisa.
@@ -126,13 +160,7 @@ Assim, temos:
 4. **Experimentos de Física:**  
 - Determinação da aceleração gravitacional local (g).
 
-
-## **6. Conclusão**
-
-Este projeto é uma aplicação prática dos conceitos teóricos de movimento oscilatório, permitindo explorar as propriedades fundamentais do pêndulo simples por meio de uma abordagem interativa.
-
 ---
-
 
 # Compilação
 
@@ -177,11 +205,9 @@ Para compilar:
 
   5. Execute o comando ```make``` para gerar o .html
 
-  6. Abra o diretório do projeto -> build, abra o arquivo index-en.html para inciar a simulação
-     
+  6. Abra o diretório do projeto -> build, abra o arquivo index-en.html para inciar a simulação     
 
 ---
-
 
 Este projeto foi desenvolvido por:
 
@@ -191,9 +217,9 @@ Este projeto foi desenvolvido por:
 
 Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
 
-
 ## **Referências**  
-- [1] BERNARDES, Esmerindo de Sousa. Dinâmica-v4 (Notas de aula). Disponivel em https://edisciplinas.usp.br/course/view.php?id=121494.
-- [2] NEUMANN, Erik. Einfaches Pendel. Disponivel em (https://www.researchgate.net/institution/Massachusetts-Institute-of-Technology).
+- [1] NEUMANN, Erik. Einfaches Pendel.
+- [2] GOLLUB.P Jerry, BAKER.L Gregory. Chaotic Dynamics: An Introduction.
+- [3] BERNARDES, Esmerindo de Sousa. Dinâmica-v4 (Notas de aula).
 - [3] LEWIN, Walter. For the Love of Physics - Walter Lewin - May 16, 2011. Disponivel em (https://www.youtube.com/watch?v=sJG-rXBbmCc&t=8s).      
          
