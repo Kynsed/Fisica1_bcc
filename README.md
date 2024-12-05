@@ -15,13 +15,30 @@ Para pequenas oscilações, o pêndulo simples apresenta um comportamento linear
 
 Para modelagem da simulação definimos as seguintes variaveis:
 
-θ = Angulo do pendulo (vertical = 0)
-R = Comprimento do fio
-T = Tensão no fio
-m = Massa do corpo 
-g = Aceleração da gravidade
+1. θ = Angulo do pendulo (vertical = 0)
+2. R = Comprimento do fio
+3. T = Tensão no fio
+4. m = Massa do corpo 
+5. g = Aceleração da gravidade
 
+Iremos deduzir a equação de movimento para o pêndulo utilizando o análogo rotacional da segunda lei de Newton para movimento em torno de um eixo fixo, que é 
+𝜏 = 𝐼 𝛼, onde:
 
+1. 𝜏 é o torque resultante.
+2. 𝐼 é a inercia rotacional.
+3. 𝛼 é a aceleração angular.
+
+A inércia rotacional em relação ao ponto de suspensão é \( I = mR^2 \). O torque pode ser calculado como \( \mathbf{r} \times \mathbf{F} \). O módulo do torque devido à gravidade é dado por:
+
+\[
+\tau = -Rm g \sin\theta
+\]
+
+Assim, temos:
+
+\[
+-Rm g \sin\theta = mR^2 \alpha
+\]
 **Suposições Adotadas:**
 - O fio é **sem massa** e **inextensível**.  
 - O sistema está sob uma **força gravitacional uniforme**.  
