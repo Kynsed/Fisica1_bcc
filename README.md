@@ -30,11 +30,11 @@ Iremos deduzir a equação de movimento para o pêndulo utilizando o análogo ro
 
 A inércia rotacional em relação ao ponto de suspensão é ![equação](https://latex.codecogs.com/svg.latex?I%20%3D%20mR%5E2). O torque pode ser calculado como o produto vetorial ![equação](https://latex.codecogs.com/svg.latex?%5Cr%20%5Ctimes%20F). O módulo do torque devido à gravidade é dado por:
 
-![equação](https://latex.codecogs.com/svg.latex?%5Ctau%20%3D%20-Rm%20g%20%5Csin%5Ctheta)
+                                                ![equação](https://latex.codecogs.com/svg.latex?%5Ctau%20%3D%20-Rm%20g%20%5Csin%5Ctheta)
 
 Assim, temos:
 
-![equação](https://latex.codecogs.com/svg.latex?-Rm%20g%20%5Csin%5Ctheta%20%3D%20mR%5E2%20%5Calpha)
+                                                ![equação](https://latex.codecogs.com/svg.latex?-Rm%20g%20%5Csin%5Ctheta%20%3D%20mR%5E2%20%5Calpha)
 
 
 **Suposições Adotadas:**
