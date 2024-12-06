@@ -212,7 +212,7 @@ Para compilar:
 Este projeto foi desenvolvido por:
 
 - **Kevin Silva** : kelvinr.silv@usp.br
-- **Gabriel Demba** : [Email 2]
+- **Gabriel Demba** : gabrielgaby@usp.br
 - **Wiltord Mosingi**: wiltordmosingi@usp.br
 
 Como parte do processo avaliativo da disciplina 7600105 - Física Básica I (2024) da USP-São Carlos ministrada pela(o) [Prof. Krissia de Zawadzki/Esmerindo de Sousa Bernardes]
