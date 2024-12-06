@@ -1,5 +1,4 @@
 
-// limitations under the License.
 
 import { Random } from '../util/Random.js';
 import { UtilEngine } from './UtilEngine.js';
